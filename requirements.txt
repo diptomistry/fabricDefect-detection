@@ -1,0 +1,7 @@
+# PatchCore and dependencies
+torch
+torchvision
+timm
+scikit-learn
+tqdm
+Pillow
