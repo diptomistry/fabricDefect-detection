@@ -5,3 +5,8 @@ timm
 scikit-learn
 tqdm
 Pillow
+
+# Enhanced preprocessing dependencies
+opencv-python
+matplotlib
+numpy
