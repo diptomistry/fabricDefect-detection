@@ -6,7 +6,11 @@ pip install .
 export KMP_DUPLICATE_LIB_OK=TRUE
 python3 patchcore_run.py
 
-KMP_DUPLICATE_LIB_OK=TRUE python3 fabric_defect_detector.py 
+# Test original model
+export KMP_DUPLICATE_LIB_OK=TRUE && python3 fabric_defect_detector.py
+
+# Test enhanced model (recommended)
+export KMP_DUPLICATE_LIB_OK=TRUE && python3 enhanced_fabric_defect_detector.py
 
 1. Test a defect image:
 KMP_DUPLICATE_LIB_OK=TRUE python test_single_image.py defect/IMG_0109.jpg
